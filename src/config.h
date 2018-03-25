@@ -5,7 +5,7 @@
  * Sketch configuration
  */
 
-#define SKETCH_NAME "NRF2RelaisTempNode"
+#define SKETCH_NAME "NRF2RelaisTemp"
 #define SKETCH_VERSION "1.0"
 
 /**********************************
@@ -58,10 +58,10 @@
 //#define MY_SIGNING_ATSHA204
 
 // OTA Firmware update settings
-#define MY_OTA_FIRMWARE_FEATURE
-#define OTA_WAIT_PERIOD 300
-#define FIRMWARE_MAX_REQUESTS 2
-#define MY_OTA_RETRY 2
+//#define MY_OTA_FIRMWARE_FEATURE
+//#define OTA_WAIT_PERIOD 300
+//#define FIRMWARE_MAX_REQUESTS 2
+//#define MY_OTA_RETRY 2
 
 /**********************************
  * MySensors gateway configuration

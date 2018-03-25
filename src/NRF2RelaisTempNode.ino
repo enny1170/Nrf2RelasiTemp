@@ -33,15 +33,17 @@ void before() {
   Serial.begin(MY_BAUD_RATE);  
   //pinMode(5,OUTPUT);
   //digitalWrite(5,HIGH);
-  nodeManager.setReportIntervalMinutes(5);
-  int relais1Id;
-  int relais2Id;
+  nodeManager.setReportIntervalMinutes(2);
+  //int relais1Id;
+  //int relais2Id;
   /*
    * Register below your sensors
   */
-  relais1Id=nodeManager.registerSensor(SENSOR_RELAY,4,3);
-  relais2Id=nodeManager.registerSensor(SENSOR_RELAY,5,2);
-  nodeManager.registerSensor(SENSOR_SHT21,-1,1);
+  //relais1Id=nodeManager.registerSensor(SENSOR_RELAY,4,1);
+  //relais2Id=nodeManager.registerSensor(SENSOR_RELAY,5,2);
+  nodeManager.registerSensor(SENSOR_RELAY,4,1);
+  nodeManager.registerSensor(SENSOR_RELAY,5,2);
+  nodeManager.registerSensor(SENSOR_SHT21,-1,3);
   //((SensorRelay*)nodeManager.getSensor(relais1Id))->setOnValue(LOW);
   
 
